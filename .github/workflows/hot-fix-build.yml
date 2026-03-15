@@ -32,7 +32,7 @@ jobs:
     needs: [ prepare, increment ]
     uses: homelab994/gh-newops/.github/workflows/deploy-artifact.yml@develop
     with:
-      artifact-name: 'gh-simple-spring'
+      artifact-name: 'gh-eureka-server'
       release-version: ${{ needs.prepare.outputs.release-version }}
       environment: 'PREPROD'
     secrets: inherit
